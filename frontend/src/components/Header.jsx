@@ -46,17 +46,8 @@ const Header = () => {
     >
       <div className="container mx-auto px-6 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between h-16 sm:h-20">
-          {/* Logo */}
-          <a
-            href="#"
-            className="text-2xl font-semibold text-white hover:text-cyan-400 transition-colors duration-300"
-            onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-          >
-            BC
-          </a>
+          {/* Logo - empty space for alignment */}
+          <div className="w-8"></div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
