@@ -16,6 +16,12 @@ const projects = [
     github: 'https://github.com/kingshere',
   },
   {
+    title: 'Serverless Image Resizer',
+    description: 'This project automates image resizing using a serverless architecture powered by AWS Lambda and S3. When an image is uploaded to a source S3 bucket, it automatically triggers a Lambda function that resizes the image and stores the output in a destination bucket.',
+    techStack: ['AWS S3', 'AWS Lambda', 'Pillow', 'AWS CloudWatch'],
+    github: 'https://github.com/kingshere/image_resizer_serverless',
+  },
+  {
     title: 'Agentic AI Writing Companion',
     description: 'Architected an agentic AI system with multi-agent orchestration, tool-augmented reasoning, and streaming inference to support low-latency, concurrent user interactions. Designed a stateful agent lifecycle and concurrency control layer to manage agent execution, tool invocation, and response streaming, improving determinism and system stability.',
     techStack: ['React', 'TypeScript', 'Node.js', 'OpenAI API'],
