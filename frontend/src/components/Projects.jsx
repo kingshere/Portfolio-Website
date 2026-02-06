@@ -46,7 +46,7 @@ const Projects = () => {
           <p className="text-xl text-gray-400">Building scalable and impactful solutions</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
           {projects.map((project, index) => (
             <motion.div
               key={index}
