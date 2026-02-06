@@ -7,7 +7,7 @@ const experiences = [
     role: 'Research Intern - Translation Pipeline for Indian Languages',
     duration: 'July 2025 - October 2025',
     responsibilities: [
-      'Contributed to the Udaan initiative under the Prime Minister's Office, enabling large-scale translation of educational content into regional Indian languages.',
+      'Contributed to the Udaan initiative under the Prime Minister\'s Office, enabling large-scale translation of educational content into regional Indian languages.',
       'Analyzed and optimized translation pipelines, improving translation accuracy and system stability.',
     ],
   },
