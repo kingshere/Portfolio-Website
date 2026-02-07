@@ -5,15 +5,15 @@ import { Button } from './ui/button';
 const projects = [
   {
     title: 'WireDrop',
-    description: 'Architected a serverless peer-to-peer file transfer system using WebRTC DataChannels with WebSocket-based signaling, eliminating server-side storage and minimizing end-to-end transfer latency. Implemented chunked binary streaming, adaptive backpressure, and congestion-aware retransmission to ensure reliable large-file transfers with stable throughput and low memory overhead.',
+    description: 'WireDrop is a secure, browser-based peer-to-peer file sharing application that enables direct file transfers between users without server-side storage. Built using WebRTC DataChannels and WebSockets for signaling, WireDrop delivers fast, private, and reliable file sharing entirely within the browser.',
     techStack: ['React', 'TypeScript', 'WebRTC', 'WebSockets', 'Node.js'],
-    github: 'https://github.com/kingshere',
+    github: 'https://github.com/kingshere/WireDrop',
   },
   {
     title: 'Gen-Collab',
-    description: 'Engineered a distributed real-time collaboration platform enabling multi-user whiteboarding, messaging, and video communication with low-latency event propagation and deterministic client-state synchronization. Built a secure, scalable backend with role-based access control, invite-based onboarding, and authenticated sessions, optimized via batched message retrieval for real-time edit and delete consistency.',
+    description: 'GEN-COLLAB is a comprehensive communication platform that combines real-time messaging, video conferencing, and collaborative whiteboarding. Built with modern technologies and a focus on user experience, it offers a seamless integration of multiple communication channels in one unified interface.',
     techStack: ['Next.js', 'TypeScript', 'Socket.IO', 'WebRTC', 'Prisma'],
-    github: 'https://github.com/kingshere',
+    github: 'https://github.com/kingshere/Gen-Canvas',
   },
   {
     title: 'Serverless Image Resizer',
@@ -23,9 +23,9 @@ const projects = [
   },
   {
     title: 'Agentic AI Writing Companion',
-    description: 'Architected an agentic AI system with multi-agent orchestration, tool-augmented reasoning, and streaming inference to support low-latency, concurrent user interactions. Designed a stateful agent lifecycle and concurrency control layer to manage agent execution, tool invocation, and response streaming, improving determinism and system stability.',
+    description: 'A modern AI-powered chat application built with Stream Chat, OpenAI, and web search capabilities. This full-stack application provides an intelligent writing assistant that can help with content creation, research, and real-time collaboration.',
     techStack: ['React', 'TypeScript', 'Node.js', 'OpenAI API'],
-    github: 'https://github.com/kingshere',
+    github: 'https://github.com/kingshere/AI-CHAT-APP-WITH-AGENTS',
   },
 ];
 
