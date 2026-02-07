@@ -27,6 +27,19 @@ const projects = [
     techStack: ['React', 'TypeScript', 'Node.js', 'OpenAI API'],
     github: 'https://github.com/kingshere/AI-CHAT-APP-WITH-AGENTS',
   },
+  {
+    title:'Translation Microservice',
+    description: 'A lightweight, modular, and scalable translation microservice built with FastAPI to provide text translation capabilities. The service currently uses a mock translation system but is designed to integrate seamlessly with the Google Translate API for production use. It supports single and bulk text translations, comprehensive logging, and a health check endpoint for monitoring.',
+    techStack: ['FastAPI', 'Python', 'SQLite', 'Pydantic'],
+    github: 'https://github.com/kingshere/Translation-Microservice-Assignment',
+  },
+
+    {
+    title:'',
+    description: '',
+    techStack: [],
+    github: '',
+  },
 ];
 
 const Projects = () => {
