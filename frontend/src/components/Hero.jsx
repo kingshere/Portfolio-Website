@@ -71,10 +71,14 @@ const Hero = () => {
               className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 shadow-lg shadow-blue-600/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/40"
               asChild
             >
-              <a href="https://drive.google.com/file/d/1euPMEo08Coo-TaM8HMOeYJZ7cL-zPmDj/view" target="_blank" rel="noopener noreferrer">
-                <Download className="mr-2 h-5 w-5" />
-                Download Resume
-              </a>
+              <a
+                href="https://drive.google.com/uc?export=download&id=1euPMEo08Coo-TaM8HMOeYJZ7cL-zPmDj"
+                download
+              >
+              <Download className="mr-2 h-5 w-5" />
+  Download Resume
+</a>
+
             </Button>
             <Button
               size="lg"
