@@ -35,10 +35,10 @@ const projects = [
   },
 
     {
-    title:'',
-    description: '',
-    techStack: [],
-    github: '',
+    title:'GRC Scanner',
+    description: 'A comprehensive web application security assessment tool that identifies vulnerabilities, analyzes security headers, and generates detailed compliance reports.',
+    techStack: ['Flask','React', 'SQLAlchemy', 'PostgreSQL', 'JWT', 'ReactJS'],
+    github: 'https://github.com/kingshere/GRC-Scanner',
   },
 ];
 
