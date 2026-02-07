@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Github } from 'lucide-react';
+import { Github } from 'lucide-react';
 import { Button } from './ui/button';
 
 const projects = [
@@ -28,16 +28,15 @@ const projects = [
     github: 'https://github.com/kingshere/AI-CHAT-APP-WITH-AGENTS',
   },
   {
-    title:'Translation Microservice',
-    description: 'A lightweight, modular, and scalable translation microservice built with FastAPI to provide text translation capabilities. The service currently uses a mock translation system but is designed to integrate seamlessly with the Google Translate API for production use. It supports single and bulk text translations, comprehensive logging, and a health check endpoint for monitoring.',
+    title: 'Translation Microservice',
+    description: 'A lightweight, modular, and scalable translation microservice built with FastAPI to provide text translation capabilities. Supports single and bulk text translations, comprehensive logging, and health monitoring.',
     techStack: ['FastAPI', 'Python', 'SQLite', 'Pydantic'],
     github: 'https://github.com/kingshere/Translation-Microservice-Assignment',
   },
-
-    {
-    title:'GRC Scanner',
+  {
+    title: 'GRC Scanner',
     description: 'A comprehensive web application security assessment tool that identifies vulnerabilities, analyzes security headers, and generates detailed compliance reports.',
-    techStack: ['Flask','React', 'SQLAlchemy', 'PostgreSQL', 'JWT', 'ReactJS'],
+    techStack: ['Flask', 'React', 'SQLAlchemy', 'PostgreSQL', 'JWT'],
     github: 'https://github.com/kingshere/GRC-Scanner',
   },
 ];
@@ -59,15 +58,17 @@ const Projects = () => {
           <p className="text-xl text-gray-400">Building scalable and impactful solutions</p>
         </motion.div>
 
+        {/* Updated Grid: Ensure no overflow issues on the container */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
           {projects.map((project, index) => (
             <motion.div
-              key={index}
+              key={project.title} // Using title as key is more robust than index
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
-              className="bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 flex flex-col"
+              // 'amount: 0.1' ensures the animation triggers as soon as 10% of the card is visible
+              viewport={{ once: true, amount: 0.1 }} 
+              transition={{ duration: 0.5, delay: (index % 2) * 0.1 }} // Staggered delay based on columns
+              className="bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 flex flex-col h-full"
             >
               <h3 className="text-2xl font-semibold text-white mb-4">
                 {project.title}
@@ -77,9 +78,9 @@ const Projects = () => {
               </p>
               <div className="space-y-4">
                 <div className="flex flex-wrap gap-2">
-                  {project.techStack.map((tech, idx) => (
+                  {project.techStack.map((tech) => (
                     <span
-                      key={idx}
+                      key={tech}
                       className="px-3 py-1 text-sm bg-blue-600/20 text-blue-300 rounded-full border border-blue-500/30"
                     >
                       {tech}
