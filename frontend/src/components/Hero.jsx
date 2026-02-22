@@ -72,7 +72,7 @@ const Hero = () => {
               asChild
             >
               <a
-                href="https://drive.google.com/uc?export=download&id=1euPMEo08Coo-TaM8HMOeYJZ7cL-zPmDj"
+                href="https://drive.google.com/file/d/1yFUN3wEQ6ItQtLKhoY5Np9sTX4uk0qno/view?usp=sharing"
                 download
               >
               <Download className="mr-2 h-5 w-5" />

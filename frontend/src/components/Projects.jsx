@@ -21,10 +21,10 @@ const projects = [
     techStack: ['AWS S3', 'AWS Lambda', 'Pillow', 'AWS CloudWatch'],
     github: 'https://github.com/kingshere/image_resizer_serverless',
   },
-  {
-    title: 'Agentic AI Writing Companion',
-    description: 'A modern AI-powered chat application built with Stream Chat, OpenAI, and web search capabilities. This full-stack application provides an intelligent writing assistant that can help with content creation, research, and real-time collaboration.',
-    techStack: ['React', 'TypeScript', 'Node.js', 'OpenAI API'],
+{
+    title: 'MCP Travel Concierge App',
+    description: `Architected a unified Model Context Protocol (MCP) server integrating Amadeus GDS and Google Travel, enabling LLMs to execute real-time, professional-grade flight and hotel inventory searches. Engineered a concurrent, transport-agnostic architecture (Stdio/HTTP) with integrated rate-limiting and utility tools for geocoding and weather intelligence to support low-latency agentic workflows.`,
+    techStack: ['Python', 'FastAPI', 'Amadeus GDS', 'SerpAPI', 'MCP'],
     github: 'https://github.com/kingshere/AI-CHAT-APP-WITH-AGENTS',
   },
   {
