@@ -8,6 +8,7 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { Toaster } from "./components/ui/toaster";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Contact />
       <Footer />
       <Toaster />
+      <Analytics />
     </div>
   );
 }
