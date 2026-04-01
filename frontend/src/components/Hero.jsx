@@ -66,20 +66,22 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           >
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 shadow-lg shadow-blue-600/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/40"
-              asChild
-            >
-              <a
-                href="https://drive.google.com/file/d/1yFUN3wEQ6ItQtLKhoY5Np9sTX4uk0qno/view?usp=sharing"
-                download
-              >
-              <Download className="mr-2 h-5 w-5" />
-  Download Resume
-</a>
-
-            </Button>
+           <Button
+  size="lg"
+  className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 shadow-lg shadow-blue-600/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/40"
+  asChild
+>
+  {/* Note: the 'download' attribute only works for same-origin files, 
+      but the modified Google Drive URL handles the download trigger itself. */}
+  <a
+    href="https://drive.google.com/uc?export=download&id=1HlkFAtwjDZ2HocjXS3VsL8hXq9CHxSK6"
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <Download className="mr-2 h-5 w-5" />
+    Download Resume
+  </a>
+</Button>
             <Button
               size="lg"
               variant="outline"
